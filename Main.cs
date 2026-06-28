@@ -9,7 +9,7 @@ using SFSConsole = ModLoader.IO.Console;
 
 namespace consoleMan
 {
-    public class Main : Mod
+    public class Main : Mod, IUpdatable
     {
         public static Main main;
         public static FolderPath modFolder;
@@ -20,6 +20,14 @@ namespace consoleMan
         public override string MinimumGameVersionNecessary => "1.5.10";
         public override string ModVersion => "2.0.0";
         public override string Description => "Enhanced console: filter by log level and source, persistent config.";
+
+        public Dictionary<string, FilePath> UpdatableFiles => new Dictionary<string, FilePath>
+        {
+            {
+                "https://github.com/uneven-coder/console-man/releases/latest/download/console-man.dll",
+                new FolderPath(ModFolder).ExtendToFile("console-man.dll")
+            }
+        };
 
         public override Dictionary<string, string> Dependencies => new Dictionary<string, string>
         {
