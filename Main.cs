@@ -18,7 +18,7 @@ namespace consoleMan
         public override string DisplayName => "Console Manager";
         public override string Author => "Cratior";
         public override string MinimumGameVersionNecessary => "1.5.10";
-        public override string ModVersion => "2.0.0";
+        public override string ModVersion => "2.0.1";
         public override string Description => "Enhanced console: filter by log level and source, persistent config.";
 
         public Dictionary<string, FilePath> UpdatableFiles => new Dictionary<string, FilePath>
