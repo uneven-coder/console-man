@@ -2,6 +2,8 @@
 
 A mod for Spaceflight Simulator that improves the built-in console with per-source log filtering.
 
+<img width="1106" height="659" alt="console-man" src="https://github.com/user-attachments/assets/b4813b70-e3e7-43d8-bfd2-b05a23b20992" />
+
 ## Features
 
 - Filter logs by source (mod, game, ModLoader, Harmony) and by level (Log, Warning, Error, Exception)
